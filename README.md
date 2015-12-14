@@ -46,7 +46,7 @@ If there is no fixed header, by default the plugin will use a 0 value.  This mea
 
 The plugin is designed to dynamically get the size of the header banner.  This is so that header elements that are set with 'em' values will be accurately converted into pixels even if the user has changed the browser font size.  The header height value is found by passing in the id attribute of the header area.
 
-The plugin takes three optional parameterss
+The plugin takes three optional parameters
 
 Name | Default values | Description
 --- | --- | ---
@@ -56,13 +56,12 @@ buffer | 0 | Offset the scroll position by an extra number of pixels
 
 The default settings can be overwritten
 
-> <DIV id="header" height=">text</DIV> 
+>DIV id="header" text /DIV 
 
-> $.fn.avoidheader.defaults.headerId = "header";
+>$.fn.avoidheader.defaults.headerId = "header";
 
 
 #Demo
 
 Index.html contains a demo of a webpage with a fixed header and focusable elements.  .avoidheader() is called after focus to reposition any hidden elements back into the visible window.
 
-Why can't I see this line?
