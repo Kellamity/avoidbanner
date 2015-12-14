@@ -2,8 +2,11 @@
 Checks position of focused elements and shifts scroll of window if elements are offscreen, or behind a fixed static header banner
 
 > Licence: GPL2
+
 > Version: 1
+
 > Requires: jQuery
+
 
 #Introduction
 
@@ -12,6 +15,7 @@ The jQuery Avoid Header plugin was developed to easily determine the location of
 #Author
 
 > Kellamity
+
 > darksidepoints@gmail.com
 
 #Setup
@@ -52,9 +56,8 @@ buffer | 0 | Offset the scroll position by an extra number of pixels
 
 The default settings can be overwritten
 
-Eg.
-
 > <DIV id="header" height=">text</DIV> 
+
 > $.fn.avoidheader.defaults.headerId = "header";
 
 
@@ -62,3 +65,4 @@ Eg.
 
 Index.html contains a demo of a webpage with a fixed header and focusable elements.  .avoidheader() is called after focus to reposition any hidden elements back into the visible window.
 
+Why can't I see this line?
