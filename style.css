@@ -1,0 +1,8 @@
+#masthead {
+	background-color: lightblue;
+	height: 120px;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 -10px 20px 6px #444;
+	z-index: 99;
+}

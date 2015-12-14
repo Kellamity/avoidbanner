@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery Avoid Header demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-2.1.4.js"></script>
+    <script src="jquery.avoidheader.js"></script>
+</head>
+<body>
+    <div id="masthead">
+        <header role="banner" class="fixwidth">
+            <span id="sitename">Fixed banner</span>
+        </header>
+    </div>
+    <div id="main" style="padding-top:150px">
+        <button id="button1" onclick="focusOnClick1()">Focus 1</button>
+        <button id="button2" onclick="focusOnClick2()">Focus 2</button>
+        <button id="button3" onclick="focusOnClick3()">Focus 3</button>
+        <ul>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li id="item1" tabindex="1">focusable item 1</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li id="item2" tabindex="2">focusable item 2</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li id="item3" tabindex="3">focusable item 3</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+        <button id="button1" onclick="focusOnClick1()">Focus 1</button>
+        <button id="button2" onclick="focusOnClick2()">Focus 2</button>
+        <button id="button3" onclick="focusOnClick3()">Focus 3</button>
+    </div>
+
+    <script>
+        function focusOnClick1() {
+            $('#item1').focus().avoidheader();       
+    }
+        function focusOnClick2() {
+            $('#item2').focus().avoidheader();;
+        }
+        function focusOnClick3() {
+            $('#item3').focus().avoidheader();;
+        }
+
+        $.fn.avoidheader.defaults.headerId = "masthead";
+        //or
+        $.fn.avoidheader.defaults.headerHeight = 200;
+        $.fn.avoidheader.defaults.buffer = 10;
+                
+    </script>
+</body>
+</html>
+
